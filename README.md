@@ -125,7 +125,7 @@ cp -r /path/to/ComfyUI-StructPrompt ./
 
 ```bash
 cd /path/to/ComfyUI/custom_nodes
-git clone <你的仓库地址> ComfyUI-StructPrompt
+git clone https://github.com/cx2002302-lang/ComfyUI-StructPrompt.git
 ```
 
 ### 重启 ComfyUI
