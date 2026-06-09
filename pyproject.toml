@@ -1,0 +1,9 @@
+[project]
+name = "ComfyUI-StructPrompt"
+version = "0.1.0"
+description = "ComfyUI plugin to generate Ideogram4 structured prompts via LLM API"
+license = {text = "MIT"}
+
+[tool.comfy]
+DisplayName = "LLM JSON Prompt"
+Category = "prompt"

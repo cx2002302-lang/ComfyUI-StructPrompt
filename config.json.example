@@ -1,0 +1,8 @@
+{
+    "_comment": "Copy this file to config.json and fill in your values. config.json is ignored when sharing.",
+    "base_url": "https://api.minimaxi.com",
+    "api_key": "sk-your-api-key-here",
+    "default_model": "MiniMax-M3",
+    "default_temperature": 0.6,
+    "default_max_tokens": 4096
+}
