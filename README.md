@@ -64,9 +64,9 @@ Cinematic horizontal composition 16:9, the woman and dragon anchored slightly ri
 | `user_prompt` | STRING | ✅ | 输入内容。根据模式不同，可以是简单描述、长文本、或 JSON |
 | `mode` | 下拉框 | ✅ | **普通扩写**：简单描述 → AI 自动丰富细节<br>**详细描述**：长文本/反推提示词 → 结构化 JSON<br>**JSON修复**：不完整/错误的 JSON → 修复为合规格式 |
 | `seed` | INT | ✅ | 抽卡种子（0-999999）。普通扩写模式下换 seed 会生成不同风格 |
-| `model` | 下拉框 | ❌ | MiniMax-M3（默认）/ MiniMax-M2.7 / MiniMax-M2.7-highspeed |
-| `temperature` | FLOAT | ❌ | 默认 0.6。越高越有创意，越低越稳定 |
-| `max_tokens` | INT | ❌ | 默认 4096。提示词很长时可加大 |
+| `model` | STRING | ✅ | 默认 `MiniMax-M3`。可输入任意模型名，如 `gpt-4o`、`claude-3-5-sonnet` |
+| `temperature` | FLOAT | ✅ | 默认 0.6。越高越有创意，越低越稳定 |
+| `max_tokens` | INT | ✅ | 默认 4096。提示词很长时可加大 |
 
 **输出：**
 
