@@ -1,5 +1,9 @@
 # ComfyUI-StructPrompt
 
+<p align="center">
+  <img src="assets/comfyui_structprompt_infographic.png" alt="ComfyUI-StructPrompt 信息图" width="800">
+</p>
+
 为 [Ideogram 4](https://github.com/ideogram-oss/ideogram4) 设计的 ComfyUI 自定义节点，通过任意 **OpenAI 兼容 API** 生成严格合规的结构化 JSON 提示词。
 
 ## 功能特点
@@ -10,6 +14,42 @@
 - **通用 OpenAI 兼容接口**：支持任意 OpenAI-compatible API（MiniMax、OpenAI、OneAPI、自定义代理等）
 - **零依赖**：仅使用 Python 标准库，无需额外安装包
 - **安全**：API Key 和 Base URL 仅通过环境变量配置，不暴露前端 widget，分享 PNG 不会泄露密钥
+
+## 样张展示
+
+点击缩略图查看原图与提示词。
+
+<p align="center">
+  <a href="assets/A1.png" title="点击查看原图">
+    <img src="assets/A1.png" width="380" alt="样张 A1">
+  </a>
+  &nbsp;&nbsp;
+  <a href="assets/A2.png" title="点击查看原图">
+    <img src="assets/A2.png" width="380" alt="样张 A2">
+  </a>
+</p>
+
+<details>
+<summary>📝 A1 提示词（点击展开）</summary>
+
+A young East Asian woman in flowing white hanfu stands on a high mountain balcony above a sea of clouds, photographed in a cinematic widescreen composition. She has long black hair partially gathered up with a delicate gold hair ornament, fair porcelain skin, refined classical features, a gentle warm smile as she gazes out across the vast horizon. She wears a layered ivory-white traditional hanfu with subtle silver embroidery, wide flowing sleeves drifting in the wind, cinched at the waist with a dark navy sash and an ornate brass buckle, a sword with a gold-trimmed hilt hanging at her hip.
+
+The background reveals a breathtaking high-altitude landscape — an endless sea of rolling white clouds below, traditional red-walled temple pavilions with curved dark-tile roofs nestled on a distant mountain peak piercing through the mist, layered blue mountain silhouettes fading into the horizon, a soft pastel dawn sky overhead with wispy cirrus clouds.
+
+Cinematic horizontal composition 16:9, the figure anchored on the right third of the frame from the upper thighs to above the crown, leaving the left two-thirds as vast negative space filled with the cloud sea and distant temples, creating a powerful sense of scale and solitude. Soft warm golden-hour sunlight illuminates her face and the white fabric from the left, casting delicate luminous highlights while preserving the cool blue tones of the distant landscape. Color palette: ivory and silver hanfu, navy sash, brass gold accents, soft dawn gold light, cool cloud white, deep mountain blue, distant vermillion temple walls. Atmosphere: tranquil, transcendent, heroic — a quiet martial artist at peace above the world, the moment before a journey. Cinematic xianxia portrait photography, epic fantasy mood, soft natural dawn light, hyper-detailed costume texture.
+
+</details>
+
+<details>
+<summary>📝 A2 提示词（点击展开）</summary>
+
+A young East Asian woman in flowing sage-green hanfu rides a massive silver-white scaled dragon perched on a mossy boulder in a misty ancient forest ravine. She has long flowing black hair with a delicate silver hair ornament, fair porcelain skin, refined features, calm composed expression with downcast eyes. She wears layered pale-green traditional robes with wide sleeves, a coral-red sash at the waist, brass ornaments, wrist guards. Her hands are raised slightly, channeling wisps of luminous pale-green magical energy that swirl around her fingers.
+
+The dragon beneath her is enormous and ancient — pearl-white scales catching the light, a flowing ivory mane and whiskers, curved horns, fierce golden eyes, fanged jaw slightly open. The dragon's long scaled body coils along the rock, its tail extending into the right side of the frame.
+
+Cinematic horizontal composition 16:9, the woman and dragon anchored slightly right of center on the boulder, the left third filled with deep forest ravine — towering moss-covered rock walls, hanging vines, fern undergrowth in the foreground, misty depth fading into blue distance. Soft cool diffused light filters down through the canopy, casting gentle highlights on the dragon's scales and the woman's green robes, while deep shadows fill the ravine. Color palette: sage green robes, ivory dragon scales, deep moss green, charcoal rock, cool misty blue. Atmosphere: mystical, ancient, serene — a hidden moment of communion between rider and beast in a sacred forest. Cinematic xianxia fantasy illustration, soft volumetric forest lighting, hyper-detailed scale and fabric texture.
+
+</details>
 
 ## 节点列表
 
@@ -174,7 +214,13 @@ ComfyUI-StructPrompt/
 ├── nodes.py                 # 节点定义（无敏感信息，可安全分享）
 ├── llm_client.py            # LLM API 客户端
 ├── pyproject.toml           # ComfyUI 管理器识别配置
-└── README.md                # 本文件
+├── README.md                # 本文件
+├── config.json.example      # 配置模板
+├── workflow-example.json    # 工作流示例
+└── assets/                  # 图片资源
+    ├── comfyui_structprompt_infographic.png
+    ├── A1.png
+    └── A2.png
 ```
 
 ## 分享注意事项
